@@ -3,7 +3,7 @@ import { useEffect, useState, useMemo } from 'react';
 import '../styles/work.css';
 import Typed from 'typed.js';
 import Footer from '../components/footer';
-import { color } from 'framer-motion';
+
 
 function Work() {
     const role = React.useRef(null);
