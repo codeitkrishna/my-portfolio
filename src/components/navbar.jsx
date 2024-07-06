@@ -18,10 +18,18 @@ function Navbar() {
 
     return(
        <nav className={`navbar ${scrollState ? 'scrolled' : ''}`} >
-        <div>
+        <div className='link'>
             <Link to="/" className='nav-links'>Work</Link>
         </div>
-                    
+        <div className='link'>
+            <Link to="/about" className='nav-links'>About</Link>
+        </div>
+        <div className='link'>
+            <Link to="/tech-stack" className='nav-links'>Tech-Stack</Link>
+        </div>
+        <div className='link'>
+            <Link to="/connect" className='nav-links'>Connect</Link>
+        </div>    
        </nav>
     )
 }

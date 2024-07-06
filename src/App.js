@@ -4,7 +4,9 @@ import './styles/App.css';
 import './index.css';
 import Navbar from './components/navbar.jsx';
 import Work from './pages/work.jsx';
-import Footer from './components/footer.jsx';
+import About from './pages/about.jsx';
+import TechStack from './pages/techStack.jsx';
+import Connect from './pages/connect.jsx';
 
 
 function App() {
@@ -14,10 +16,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Work />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/tech-stack" element={<TechStack />} />
+        <Route path="/connect" element={<Connect />} />
       </Routes>
     </main>
-    <Footer />
+    
     </Router>
   );
 }
