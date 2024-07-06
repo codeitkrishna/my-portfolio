@@ -5,7 +5,7 @@ body{
 }
 
 .base-app{
-  background-color: #243831;
+  background-color: #20352d;
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* 100% of the viewport height */

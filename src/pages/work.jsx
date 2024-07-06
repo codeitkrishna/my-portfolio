@@ -1,16 +1,19 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import '../styles/work.css';
 import Typed from 'typed.js';
+import Footer from '../components/footer';
+import { color } from 'framer-motion';
 
 function Work() {
     const role = React.useRef(null);
+    const [Progress, setProgress] = useState(false)
 
     useEffect(() => {
     const typed = new Typed(role.current, {
-      strings: ['Software Developer ^150', 'Designer ^150', 'Photographer ^150', 'Artist ^150'],
-      typeSpeed: 20,
-      backSpeed: 27,
+      strings: ['^300 Software Developer ^200', 'Designer ^200', 'Photographer ^200', 'Artist ^200'],
+      typeSpeed: 40,
+      backSpeed: 40,
       loop: true
     });
 
@@ -21,41 +24,67 @@ function Work() {
 
   }, []);
 
+    const mouseEnter = () => {
+        setProgress(true);
+        
+    };
+
+    const mouseLeave = () => {
+        setProgress(false);
+    };
+
+    const buttonStyle = useMemo(
+        () => ({
+          color: Progress ? "#243831" : "#A3DCD4",
+          marginLeft:'3rem',
+          cursor: 'pointer',
+          transition: '0.2s'
+        }),
+        [Progress]
+      );
+
     return (
         <div className='w-main'>
+            <div className='hero-gradient'> </div>
             <div className='w-hero'>
                 <div className='w-heading'>
                     Hi. I'm Krishna. <br />
                     A &lt; <span ref={role} className='w-heading'/> /&gt;
                 </div>
-                
                 <div className='w-hero-line'>
                     Designing the future, one pixel at a time.
                 </div>
             </div>
+            
 
             <div className="work-projects">
                 <div className="w-project-row">
                     <div className="w-project-1">
-                        <p className='w-project-text'>Impresso Espresso</p>
+                        <div className='w-project-text'>Impresso Espresso</div>
                     </div>
                     <div className="w-project-2">
-                    <p className='w-project-text'>DBMS</p>
+                    <div className='w-project-text'>DBMS</div>
                     </div>
                 </div>
 
                 <div className='w-project-row'>
 
                     <div className="w-project-3">
-                        <p className='w-project-text'>Flux</p>
+                        <div className='w-project-text'>FinMan</div>
                     </div>
-                    <div className="w-project-4">
-                        <p className='w-project-text'>FinMan</p>
+                    <div className="w-project-4" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                        <div className='w-project-text' style={{display:"flex", justifyContent:"space-between"}}>
+                            <div style={buttonStyle} >*In Progress</div>
+                            <div style={{alignSelf:"right"}}>Flux</div>
+                        </div>
                     </div>
 
                 </div>
-            </div>
+                </div>
+            
+            <Footer />
         </div>
+        
     );
 }
 
