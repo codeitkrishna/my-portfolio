@@ -17,11 +17,11 @@
 }
 
 .navbar.scrolled{
-    background: rgba( 24, 38, 22, 0.3 );
-    backdrop-filter: blur( 2rem );
-    -webkit-backdrop-filter: blur( 2rem );
+    background: rgba(30, 56, 46, 0.5);
+    backdrop-filter: blur( 200px );
+    -webkit-backdrop-filter: blur( 200px );
     border-radius: 2rem;
-    border-bottom: 0.0001rem solid #D3EDE5;
+    z-index: 1000
 }
 
 .nav-links{
