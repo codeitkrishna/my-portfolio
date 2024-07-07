@@ -45,7 +45,7 @@ function Work() {
 
     return (
         <div className='w-main'>
-            <div className='hero-gradient'> </div>
+
             <div className='w-hero'>
                 <div className='w-heading'>
                     Hi. I'm Krishna. <br />

@@ -4,10 +4,9 @@ import Footer from '../components/footer';
 function About() {
     return(
         <div className="about">
-            <div className='hero-gradient'> </div>
 
             <div className="about-title">
-                I'm Krishna!
+                I'm Krishna.
             </div>
             <div className="about-intro">
                 <div className='self-image'> </div>
@@ -18,8 +17,6 @@ function About() {
                     <div className="intro">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus nostrum eaque soluta et facilis, sit nesciunt asperiores aspernatur non dolorem tempore esse quos cumque voluptates dicta rerum, atque hic.
                         In et tempore voluptatem, nihil eaque ab sapiente eius itaque libero odit qui perspiciatis natus nostrum veniam obcaecati alias animi ex omnis unde dicta, incidunt nisi sit possimus laboriosam. Consectetur.
-                        Eveniet temporibus vitae necessitatibus dignissimos aspernatur, molestias iste saepe? Inventore, atque vel. Asperiores laborum molestiae pariatur qui quo veritatis earum ea! Quaerat, odio reiciendis! Laboriosam ullam aspernatur earum facere dolorum?
-                        Itaque alias molestiae quis qui, tempora libero nulla rem, consectetur, consequuntur beatae aspernatur ab veniam veritatis doloribus impedit odio quae autem facere porro? Harum unde repellendus reprehenderit repudiandae natus cum.
                     </div>
                 </div>
             </div>
@@ -44,6 +41,16 @@ function About() {
                         <div className="inner-box-1">Lorem Ipsum</div>
                         <div className="inner-box-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus nostrum eaque soluta et facilis, sit nesciunt asperiores aspernatur non dolorem tempore esse quos cumque voluptates dicta rerum, atque hic.</div>
                     </div>
+                </div>
+            </div>
+            <div className="me">
+                <div className='extra-text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus nostrum eaque soluta et facilis, sit nesciunt asperiores aspernatur non dolorem tempore esse quos cumque voluptates dicta rerum, atque hic.
+                In et tempore voluptatem, nihil eaque ab sapiente eius itaque libero odit qui perspiciatis natus nostrum veniam obcaecati alias animi ex omnis unde dicta, incidunt nisi sit possimus laboriosam. Consectetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus nostrum eaque soluta et facilis, sit nesciunt asperiores aspernatur non dolorem tempore esse quos cumque voluptates dicta rerum, atque hic.
+                </div>
+                <div className='photos'>
+
                 </div>
             </div>
         <Footer />

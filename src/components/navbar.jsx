@@ -14,10 +14,10 @@ function Navbar() {
         window.addEventListener('scroll', handleScroll);
         
       }, [])
-    
+      
 
     return(
-       <nav className={`navbar ${scrollState ? 'scrolled' : ''}`} >
+       <div className={`navbar ${scrollState ? 'scrolled' : ''}`} >
         <div className='link'>
             <Link to="/" className='nav-links'>Work</Link>
         </div>
@@ -30,8 +30,10 @@ function Navbar() {
         <div className='link'>
             <Link to="/connect" className='nav-links'>Connect</Link>
         </div>    
-       </nav>
+       </div>
     )
 }
+
+
 
 export default Navbar;
