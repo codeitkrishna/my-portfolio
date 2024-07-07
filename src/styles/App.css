@@ -16,299 +16,307 @@ body{
 }
 
 .uiverse {
-    --duration: 30s; /* Slower animation */
-    --easing: linear;
-    --c-color-1: rgba(52, 81, 86, 0.7);
-    --c-color-2: #4d6a32c8;
-    --c-color-3: #625353;
-    --c-color-4: #366F32;
-    --c-color-5: #36654A;
-    --c-color-6: #607335;
-    
-    --c-shadow: rgba(87, 223, 255, .5);
-    --c-radial-inner: transparent;
-    --c-radial-outer: transparent;
-    --c-color: #fff;
-    -webkit-tap-highlight-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    display: table;
-    border-radius: 24px;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 40vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    line-height: 1.5;
-    color: var(--c-color);
-}
+  --duration: 30s; /* Slower animation */
+  --easing: linear;
+  --c-color-1: rgba(40, 93, 102, 0.7);
+  --c-color-2: #706925c8;
+  --c-color-3: #366F32;
+  --c-color-4: #6c4747 ;
+  --c-color-5: #36654A;
+  --c-color-6: #607335;
   
+  --c-shadow: rgba(87, 223, 255, .5);
+  --c-radial-inner: transparent;
+  --c-radial-outer: transparent;
+  --c-color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  display: table;
+  border-radius: 24px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--c-color);
+  
+}
+
 .uiverse:before {
-    content: '';
-    pointer-events: none;
-    position: absolute;
-    z-index: 3;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 24px;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
 
 }
-  
+
 .uiverse .wrapper {
-    mask-image:#20352d; /* Standard syntax */
-    -webkit-mask-image:#20352d; /* WebKit/Blink (Safari, Chrome) */
-    mask-image: #20352d; /* Firefox */
-    mask-image: #20352d; /* Edge */
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
+  mask-image:#20352d; /* Standard syntax */
+  -webkit-mask-image:#20352d; /* WebKit/Blink (Safari, Chrome) */
+  mask-image: #20352d; /* Firefox */
+  mask-image: #20352d; /* Edge */
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
   
+}
+
 .uiverse .wrapper span {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
-  
+
 .uiverse .wrapper .circle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    filter: blur(var(--blur, 100px));
-    background: var(--background, transparent);
-    transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
-    animation: var(--animation, none) var(--duration) var(--easing) infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  filter: blur(var(--blur, 100px));
+  background: var(--background, transparent);
+  transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+  animation: var(--animation, none) var(--duration) var(--easing) infinite;
 }
-  
+
 .uiverse .wrapper .circle.circle-1,
 .uiverse .wrapper .circle.circle-9{
-   
-    --background: var(--c-color-4);
-    --blurr:100px;
+ 
+  --background: var(--c-color-4);
+  --blurr:100px;
 }
 .uiverse .wrapper .circle.circle-10 {
-    --background: var(--c-color-4);
-    --blurr:100px;
+  --background: var(--c-color-2);
+  --blurr:100px;
 }
-  
-.uiverse .wrapper .circle.circle-3,
+
+.uiverse .wrapper .circle.circle-3{
+--background: var(--c-color-5);
+  --blurr:100px;
+}
 .uiverse .wrapper .circle.circle-4 {
-    --background: var(--c-color-2);
-    --blur: 100px;
+  --background: var(--c-color-2);
+  --blur: 100px;
 }
-  
+
 .uiverse .wrapper .circle.circle-5,
 .uiverse .wrapper .circle.circle-6 {
-    --background: var(--c-color-3);
-    --blur: 100px;
+  --background: var(--c-color-3);
+  --blur: 100px;
 }
-  
-.uiverse .wrapper .circle.circle-2,
+
+.uiverse .wrapper .circle.circle-2{
+--background: var(--c-color-1);
+  --blurr:100px;
+}
 .uiverse .wrapper .circle.circle-7,
 .uiverse .wrapper .circle.circle-8{
-    --background: var(--c-color-5);
-    --blur: 100px;
+  --background: var(--c-color-5);
+  --blur: 100px;
 }
 
 .uiverse .wrapper .circle.circle-11,
 .uiverse .wrapper .circle.circle-12 {
-    --background: var(--c-color-6);
-    --blur: 100px;
+  --background: var(--c-color-6);
+  --blur: 100px;
 }
-  
+
 .uiverse .wrapper .circle.circle-1 {
-    --x: 80rem;
-    --y: 0rem;
-    --animation: circle-1;
+  --x: 80rem;
+  --y: 0rem;
+  --animation: circle-1;
 }
-  
+
 .uiverse .wrapper .circle.circle-2 {
-    --x: 40rem;
-    --y: 20rem;
-    --animation: circle-2;
+  --x: 40rem;
+  --y: 20rem;
+  --animation: circle-2;
 }
-  
+
 .uiverse .wrapper .circle.circle-3 {
-    --x: 0rem;
-    --y: 30rem;
-    --animation: circle-3;
+  --x: 0rem;
+  --y: 30rem;
+  --animation: circle-3;
 }
-  
+
 .uiverse .wrapper .circle.circle-4 {
-    --x: 90rem;
-    --y: 30rem;
-    --animation: circle-4;
+  --x: 90rem;
+  --y: 30rem;
+  --animation: circle-4;
 }
-  
+
 .uiverse .wrapper .circle.circle-5 {
-    --x: 61rem;
-    --y: 0rem;
-    --animation: circle-5;
+  --x: 61rem;
+  --y: 0rem;
+  --animation: circle-5;
 }
-  
+
 .uiverse .wrapper .circle.circle-6 {
-    --x: 60rem;
-    --y: 2rem;
-    --animation: circle-6;
+  --x: 60rem;
+  --y: 2rem;
+  --animation: circle-6;
 }
-  
+
 .uiverse .wrapper .circle.circle-7 {
-    --x: 10rem;
-    --y: 20rem;
-    --animation: circle-7;
+  --x: 10rem;
+  --y: 20rem;
+  --animation: circle-7;
 }
-  
+
 .uiverse .wrapper .circle.circle-8 {
-    --x: 0rem;
-    --y: 0rem;
-    --animation: circle-8;
+  --x: 0rem;
+  --y: 0rem;
+  --animation: circle-8;
 }
-  
+
 .uiverse .wrapper .circle.circle-9 {
-    --x: 20rem;
-    --y: -3rem;
-    --animation: circle-9;
+  --x: 20rem;
+  --y: -3rem;
+  --animation: circle-9;
 }
-  
+
 .uiverse .wrapper .circle.circle-10 {
-    --x: 70rem;
-    --y: 2rem;
-    --animation: circle-10;
+  --x: 70rem;
+  --y: 2rem;
+  --animation: circle-10;
 }
-  
+
 .uiverse .wrapper .circle.circle-11 {
-    --x: 65rem;
-    --y: 1rem;
-    --animation: circle-11;
+  --x: 65rem;
+  --y: 1rem;
+  --animation: circle-11;
 }
-  
+
 .uiverse .wrapper .circle.circle-12 {
-    --blur: 100px;
-    --x: 100px;
-    --y: 0rem;
-    --animation: circle-12;
+  --blur: 100px;
+  --x: 100px;
+  --y: 0rem;
+  --animation: circle-12;
 }
-  
+
 @keyframes circle-1 {
-    33% {
-      transform: translate(0rem, 4rem) translateZ(0);
-    }
-    66% {
-      transform: translate(10rem, 18rem) translateZ(0);
-    }
+  33% {
+    transform: translate(0rem, 4rem) translateZ(0);
+  }
+  66% {
+    transform: translate(10rem, 18rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-2 {
-    33% {
-      transform: translate(20rem, -2.5rem) translateZ(0);
-    }
-    66% {
-      transform: translate(2rem, -50rem) translateZ(0);
-    }
+  33% {
+    transform: translate(20rem, -2.5rem) translateZ(0);
+  }
+  66% {
+    transform: translate(2rem, -50rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-3 {
-    33% {
-      transform: translate(40rem, 40rem) translateZ(0);
-    }
-    66% {
-      transform: translate(51rem, 15rem) translateZ(0);
-    }
+  33% {
+    transform: translate(40rem, 40rem) translateZ(0);
+  }
+  66% {
+    transform: translate(51rem, 15rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-4 {
-    33% {
-      transform: translate(12rem, -3rem) translateZ(0);
-    }
-    66% {
-      transform: translate(18rem, -2rem) translateZ(0);
-    }
+  33% {
+    transform: translate(12rem, -3rem) translateZ(0);
+  }
+  66% {
+    transform: translate(18rem, -2rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-5 {
-    33% {
-      transform: translate(12rem, 10rem) translateZ(0);
-    }
-    66% {
-      transform: translate(5rem, -8rem) translateZ(0);
-    }
+  33% {
+    transform: translate(12rem, 10rem) translateZ(0);
+  }
+  66% {
+    transform: translate(5rem, -8rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-6 {
-    33% {
-      transform: translate(10rem, -4rem) translateZ(0);
-    }
-    66% {
-      transform: translate(15rem, -16rem) translateZ(0);
-    }
+  33% {
+    transform: translate(10rem, -4rem) translateZ(0);
+  }
+  66% {
+    transform: translate(15rem, -16rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-7 {
-    33% {
-      transform: translate(1rem, 12rem) translateZ(0);
-    }
-    66% {
-      transform: translate(20rem, -10rem) translateZ(0);
-    }
+  33% {
+    transform: translate(1rem, 12rem) translateZ(0);
+  }
+  66% {
+    transform: translate(20rem, -10rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-8 {
-    33% {
-      transform: translate(60rem, 0rem) translateZ(0);
-    }
-    66% {
-      transform: translate(20rem, -8rem) translateZ(0);
-    }
+  33% {
+    transform: translate(60rem, 0rem) translateZ(0);
+  }
+  66% {
+    transform: translate(20rem, -8rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-9 {
-    33% {
-      transform: translate(10rem, -4rem) translateZ(0);
-    }
-    66% {
-      transform: translate(70rem, -8rem) translateZ(0);
-    }
+  33% {
+    transform: translate(10rem, -4rem) translateZ(0);
+  }
+  66% {
+    transform: translate(70rem, -8rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-10 {
-    33% {
-      transform: translate(50rem, 10rem) translateZ(0);
-    }
-    66% {
-      transform: translate(75rem, 15rem) translateZ(0);
-    }
+  33% {
+    transform: translate(50rem, 10rem) translateZ(0);
+  }
+  66% {
+    transform: translate(75rem, 15rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-11 {
-    33% {
-      transform: translate(0.5rem, 5rem) translateZ(0);
-    }
-    66% {
-      transform: translate(15rem, 10rem) translateZ(0);
-    }
+  33% {
+    transform: translate(0.5rem, 5rem) translateZ(0);
+  }
+  66% {
+    transform: translate(15rem, 10rem) translateZ(0);
+  }
 }
-  
+
 @keyframes circle-12 {
-    33% {
-      transform: translate(60rem, 0rem) translateZ(0);
-    }
-    66% {
-      transform: translate(20rem, -10rem) translateZ(0);
-    }
+  33% {
+    transform: translate(60rem, 0rem) translateZ(0);
+  }
+  66% {
+    transform: translate(20rem, -10rem) translateZ(0);
+  }
 }

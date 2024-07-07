@@ -1,5 +1,46 @@
 .footer{
-    width: 100%;
-    background-color: #8fdcc2;
-    height: 10rem;
+    width: 97%;
+    background-color: #20352d;
+    height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: #D3EDE5;
+}
+
+.ft-name{
+    width: 30%;
+}
+
+.ft-items{
+    display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+width: 30%;
+}
+
+.work{
+    align-items: center;
+}
+.abt{
+    align-items: center;
+}
+.ts{
+    align-items: center;
+}
+.connect{
+    align-items: center;
+}
+.love{
+    /* margin-left: 10rem; */
+    width: 30%;
+    height: 3rem;
+    align-items: right;
+    text-align: right;
+}
+.heart{
+    margin: 0 0.5rem;
 }
