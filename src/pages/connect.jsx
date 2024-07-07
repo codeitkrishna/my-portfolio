@@ -40,3 +40,5 @@ function Connect() {
         </div>
     )
 }
+
+export default Connect;
