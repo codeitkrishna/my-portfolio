@@ -2,6 +2,7 @@ import '../styles/connect.css'
 import { ReactComponent as LinkedInIcon } from '../assets/linkedin-svgrepo-com.svg';
 import { ReactComponent as GmailIcon } from '../assets/gmail-svgrepo-com-2.svg';
 import { ReactComponent as InstaIcon } from '../assets/instagram-svgrepo-com.svg';
+import Footer from '../components/footer';
 
 function Connect() {
     return (
@@ -34,7 +35,7 @@ function Connect() {
                 Instagram - @krishnaaagupta
             </button>
             </div>
-            
+            <Footer />
 
         </div>
     )
