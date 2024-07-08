@@ -58,7 +58,7 @@ function Work() {
             
 
             <div className="work-projects">
-                
+                <div className="w-project-row">
                     <div className="w-project-1">
                         <div className='w-project-text'>Impresso Espresso</div>
                         <div className='project-description'>Frontend Design</div>
@@ -68,6 +68,9 @@ function Work() {
                         <div className='w-project-text'>Inventory Management</div>
                         <div className='project-description'>Database Management System.</div>
                     </div>
+                </div>
+
+                <div className='w-project-row'>
                     <div className=" w-project-3">
                         <div className='w-project-text'>FinMan</div>
                         <div className='project-description'>UI/UX || Case-Study</div>
@@ -77,10 +80,9 @@ function Work() {
                             <div style={buttonStyle} >*In Progress</div>
                             <div style={{alignSelf:"right"}}>Flux</div>
                         </div>
-                        <div className='project-description'>Fullstack Development </div>
+                        <div className='project-description'>Full-stack Developer </div>
                     </div>
-
-
+                </div>
             </div>
             
             <Footer />

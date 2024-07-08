@@ -49,11 +49,18 @@
 
 .w-projects{
     display:flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
     width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
+
+}
+
+.w-project-row{
+    display:flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem; 
 }
 
 .w-project-1{
