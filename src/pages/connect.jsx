@@ -40,7 +40,7 @@ function Connect() {
                 </button>
                 </a>
 
-                <a href="https://www.instagram.com/_krishnaaagupta_?igsh=MXhzOTFpaWhpdnRhbA==" target="_blank" rel="noopener no referrer">
+                <a href="https://www.instagram.com/_krishnaaagupta_?igsh=MXhzOTFpaWhpdnRhbA==" target="_blank" rel="noopener noreferrer">
                 <button className="btn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
                         <InstaIcon width="24" height="24" />
