@@ -22,13 +22,15 @@ function Connect() {
                 </svg>
                 Gmail - mailittokrishnagupta@gmail.com
             </button>
+            
             <button className="btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                     <LinkedInIcon width="24" height="24" />
                 </svg>
-                LinkedIN - @krishnaaagupta
+                <a href="https://www.linkedin.com/in/krishnaaagupta/">LinkedIN - @krishnaaagupta</a>
             </button>
-            <button className="btn">
+            
+            <button  className="btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
                     <InstaIcon width="24" height="24" />
                 </svg>

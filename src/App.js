@@ -28,7 +28,7 @@ function App() {
         <div className="circle circle-2"></div>
         <div className="circle circle-1"></div>
         </div>
-      </div>
+    </div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Work />} />
