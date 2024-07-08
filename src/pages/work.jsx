@@ -61,26 +61,31 @@ function Work() {
                 <div className="w-project-row">
                     <div className="w-project-1">
                         <div className='w-project-text'>Impresso Espresso</div>
+                        <div className='project-description'>Frontend Design</div>
+                        <div className="ie-image"></div>
                     </div>
-                    <div className="w-project-2">
-                    <div className='w-project-text'>DBMS</div>
+                    <div className=" w-project-2">
+                        <div className='w-project-text'>Inventory Management</div>
+                        <div className='project-description'>Database Management System.</div>
                     </div>
                 </div>
 
                 <div className='w-project-row'>
 
-                    <div className="w-project-3">
+                    <div className=" w-project-3">
                         <div className='w-project-text'>FinMan</div>
+                        <div className='project-description'>UI/UX || Case-Study</div>
                     </div>
-                    <div className="w-project-4" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+                    <div className=" w-project-4" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
                         <div className='w-project-text' style={{display:"flex", justifyContent:"space-between"}}>
                             <div style={buttonStyle} >*In Progress</div>
                             <div style={{alignSelf:"right"}}>Flux</div>
                         </div>
+                        <div className='project-description'>Fullstack Development </div>
                     </div>
 
                 </div>
-                </div>
+            </div>
             
             <Footer />
         </div>

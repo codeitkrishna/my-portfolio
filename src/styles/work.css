@@ -1,6 +1,7 @@
 
 .w-main{
-    z-index: 5;
+    width: 100%;
+    z-index: 4;
     position: relative;
 }
 
@@ -59,7 +60,7 @@
     gap: 4rem;
     justify-content: center;
     margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem; 
 }
 
 .w-project-1{
@@ -67,7 +68,45 @@
     background-color: #bddff9;
     width: 50rem;
     border-radius: 5rem;
+    overflow: hidden;
 }
+
+.ie-image {
+    background: url('../assets/project-images/ie-thumbnail.png');
+    z-index: 5;
+    width: 45rem;
+    height: 23rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    position: relative;
+    bottom: -3rem; 
+    left: -3rem;  
+    transition: transform 0.3s ease;
+}
+
+.project-description{
+    width: 75%;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    color: #243831;
+    font-size: 1.5rem; 
+    transition: transform 0.3s ease;   
+}
+
+.w-project-1:hover .ie-image  {
+    /* transform: translate(16.5rem, -9rem);  */
+    transform: scale(1.05);
+}
+.w-project-1:hover .project-description  {
+    /* transform: translate(16.5rem, -9rem);  */
+    transform: scale(1.1) translate(2rem, 0.5rem);
+}
+
 
 .w-project-2{
     height: 30rem;
@@ -93,11 +132,12 @@
 .w-project-text{
     text-align: right;
     margin-top:2rem;
-    margin-right: 3rem;
+    margin-right: 5rem;
     font-family: 'Acorn', sans-serif;
     font-weight: 600;
     color: #243831;
     font-size: 2rem;
+    transition: transform 0.3s ease;
 }
 
 .text-left{
@@ -108,4 +148,11 @@
     font-weight: 600;
     color: #243831;
     font-size: 2rem;
+}
+
+
+
+.w-project-1:hover .w-project-text  {
+    /* transform: translate(16.5rem, -9rem);  */
+    transform: scale(1.1);
 }
